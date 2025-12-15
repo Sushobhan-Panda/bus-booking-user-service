@@ -1,0 +1,25 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: user-service
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/busbooking
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
+
+logging:
+  level:
+    root: INFO
+    com.bus.user: DEBUG
+    org.springdoc: DEBUG
+    org.springdoc.api: DEBUG
+    org.springdoc.webmvc.api: DEBUG
+    org.springframework.web: DEBUG
